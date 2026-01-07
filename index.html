@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thangavel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body> 
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <h3>
+                    Thangavel Mohanasundaram
+                </h3>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="banner">
+            <div class="container">
+                <div class="banner-wrapper">
+                    <div class="image-container">
+                        <img width="100%" src="DSC_1382-1.jpg" alt="photo">
+                    </div>
+                    <div class="text-container">                 
+                        <h3>Front End Developer</h3>
+                    
+                        <h1>THANGAVEL M</h1>
+                    
+                        <P>Hi, I,m Thangavel M. I studied engineering with a focus on Artificial Intelligence and Data Science. Over time, I found that I really enjoy using what I,ve learned in AI and machine learning to create practical, smart web applications. I,m always curious about how technology can solve real-life problems and make things easier or more efficient.</P>
+                        <div>
+                            <a href="#contact" class="get-in-touch">GET IN TOUCH <i class="fa-arrow-up fa-solid"></i></a>
+                            <a href="/resumetv.pdf" class="download" download="resume.pdf">DOWNLOAD CV <i class="fa-solid fa-download"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>   
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="banner">
+            <div class="container">
+                <div class="main-banner-wrapper">
+                    <h2 id="about-me">About Me</h2>
+                    <div>
+                        <i class="fa-solid fa-code" id="logo"></i>
+                        <h3>WEB DEVELOPER</h3>
+                        <p>
+                            Hey there! I'm Thangavel, and I've been working as a front-end developer while slowly learning the ropes of full-stack development. I like building websites that are simple to use, responsive, and actually helpful. I'm always learning and improving my skills, aiming to become a full-stack developer who can build useful and meaningful digital tools. Still a work in progress—but loving the journey.
+                        </p>
+                        <div>
+                            <a href="https://www.linkedin.com/in/thangavel-mohanasundram-865819252/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BrzfsTJqKSf2DupLf83ONsQ%3D%3D" target="_blank" class="linked-in">LINKEDIN<i class="fa-solid fa-arrow-up"></i></a>
+                            <a href="https://github.com/Thangavel25/Project1" target="_blank" class="git-hub"> GITHUB <i class="fa-solid fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h2>Skills and Expertise</h2>
+                    <div>
+                        <i class="fa-solid fa-code" id="logo"></i>
+                        <h4>Programming Languages</h4>
+                        <ul>
+                            <li>PYTHON(Basics)</li>
+                        </ul>
+                        <h4>Other</h4>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVA SCRIPT</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="education">
+                <h2>Education</h2>
+                <div>
+                        <i class="fa-solid fa-code" id="logo"></i>
+                        <h4>Nehru Institute Of Engineering And Technology</h4>
+                        <h6>2020-2024</h6>
+                        <p>B-tech Artificial Intelligence and Data Science (75%)</p>
+                        <h4>Don Bosco Higher Secondary School</h4>
+                        <h6>2019-2020</h6>
+                        <p>Higher secondary Maths with computer Science (62%)</p>
+                        <h4>Don Bosco Higher Secondary School</h4>
+                        <h6>2017-2018</h6>
+                        <p>State board (64%)</p>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </section>
+     <section class="banner-project">
+            <div class="container">
+                <div class="project-cards">
+                    <div class="banner-project-wrapper">
+                        <h2>Projects</h2>
+                        <div>
+                            <img src="Screenshot (1).png" alt="" width="100%">
+                            <div>
+                                <h4>HTML CSS</h4>
+                                <p>A full packed html and css landing webpage</p>
+                            </div>
+                            <div>
+                                <a href="">More info</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-project-wrapper-1">
+                        <div>
+                            <img src="Screenshot (2).png" alt="" width="100%">
+                            <div>
+                                <h4>HTML CSS JAVASCRIPT</h4>
+                                <p>A full packed html,css and javascript landing webpage</p>
+                            </div>
+                            <div>
+                                <a href="">More info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+        const img = document.querySelector(".image-container img");
+
+        document.addEventListener("mousemove", (event) => {
+            const x = (event.clientX / window.innerWidth - 0.5) * 5; // Scale movement
+            const y = (event.clientY / window.innerHeight - 0.5) * 5;
+            
+            img.style.transform = `translate(${x}px, ${y}px)`;
+        });
+
+        // Reset position when cursor leaves the window
+        document.addEventListener("mouseleave", () => {
+            img.style.transition = "transform 0.5s ease-out";
+            img.style.transform = "translate(0, 0)";
+        });
+
+    </script>
+</body>
+</html>

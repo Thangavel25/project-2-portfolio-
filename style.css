@@ -1,0 +1,391 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color:rgb(0, 8, 14);
+    color: white;
+}
+
+.container{
+        width: 80%;
+        margin: 40px auto; 
+
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+h1{
+    color: white;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrapper{
+    font-size: 24px;
+    
+}
+
+.header-wrapper nav{
+    display: flex;
+    gap: 20px;
+}
+
+.image-container { 
+    display: flex;
+    flex: 40%;
+    justify-content: center;
+}
+
+.image-container img{
+    clip-path: circle();  
+}
+.text-container{
+    flex: 60%;
+    margin: 0px 50px;
+    text-align: justify;
+    justify-content: center;
+}
+.banner-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.banner-wrapper > div{
+    width: 100%;
+}
+.banner-wrapper h3{
+    margin-bottom: 5px;
+    font-weight: 200;
+    font-size: medium;
+    color: gainsboro;
+}
+
+.banner-wrapper h1{
+    margin-bottom: 5px;
+}
+
+.banner-wrapper p{
+    margin-bottom: 20px;
+    color: gainsboro;
+    font-weight: 500;
+    font-size:medium;
+    line-height: 1.5;
+}
+
+.banner-wrapper > div > div{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.banner-wrapper > div > div > a {
+    background-color: transparent;
+    color: #e7dede;
+    padding: 10px;
+    border: 1px solid white;
+    font-size: medium;
+    text-align: center;
+    font-weight: 500;
+}
+
+.banner-wrapper > div > div > a:nth-child(1){
+    background-color: burlywood;
+    color: black;
+}
+
+.banner-wrapper > div > div > a:hover {
+    background-color: #e7dede;
+    color: black;
+}
+
+.get-in-touch i {
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(40deg);
+}
+
+.get-in-touch:hover > i {
+    transform: rotate(130deg);
+}
+
+.download i {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(0%, 0%);
+}
+
+.download:hover i {
+    transform: translate(0%, 10%);
+}
+
+.main-banner-wrapper {
+    display: flex;
+}
+
+.main-banner-wrapper h2 {
+    flex: 40%;
+}
+
+.main-banner-wrapper > div {
+    flex: 60%;
+    justify-content: center;
+    text-align: justify;
+}
+
+#logo {
+    font-size: 1.8em;
+    color: wheat;
+    margin-bottom: 10px;
+}
+
+.main-banner-wrapper > div h4 {
+    margin-bottom: 10px;
+}
+
+.main-banner-wrapper > div p {
+    font-size: .9em;
+    font-weight: 500;
+    color: #b3b3b3;
+    margin-top: 10px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.main-banner-wrapper > div div {
+    display: flex;
+}
+.main-banner-wrapper > div > div a {
+    background-color: transparent;
+    color: #e7dede;
+    padding: 10px;
+    border: 1px solid white;
+    font-size: .9em;
+    text-align: center;
+}
+
+.main-banner-wrapper > div > div a:hover {
+    background-color: ghostwhite;
+    color: black;
+}
+
+.main-banner-wrapper, .skills, .education {
+    margin-bottom: 100px;
+}
+
+.linked-in {
+    margin-bottom: 20px;
+    font-size: medium;
+    font-weight: 500;
+}
+.linked-in i {
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(40deg);
+}
+
+.linked-in:hover i {
+    transform: rotate(130deg);
+}
+
+.git-hub {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.git-hub:hover i {
+    transition: transform 0.3s ease-in-out;
+    transform: rotateY(180deg);
+}
+
+.git-hub {
+    margin-bottom: 20px;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.skills {
+    display: flex;
+}
+
+.skills h2 {
+    flex: 40%;
+}
+
+.skills > div {
+    flex: 60%;
+    justify-content: center;
+}
+
+#logo {
+    font-size: 1.8em;
+    color: wheat;
+    margin-bottom: 10px;
+}
+
+.skills > div h4 {
+    margin-bottom: 10px;
+}
+
+.skills > div ul {
+    font-size: .9em;
+    font-weight: 500;
+    color: #b3b3b3;
+    margin-top: 10px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+li {
+    list-style-position: inside;
+}
+
+.education {
+    display: flex;
+}
+
+.education h2 {
+    flex: 40%;
+}
+
+.education > div {
+    flex: 60%;
+    justify-content: center;
+}
+
+#logo {
+    font-size: 1.8em;
+    color: wheat;
+    margin-bottom: 10px;
+} 
+
+.education > div h4 {
+    margin-bottom: 10px;
+}
+
+.education p {
+    font-size: .9em;
+    font-weight: 500;
+    color: #b3b3b3;
+    margin-top: 10px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.banner-project-wrapper > div {
+    margin-top: 20px;
+    background-color: #312f2f;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #ffffff; */
+}
+
+.banner-project-wrapper > div img {
+    padding: 10px;
+}
+
+.banner-project-wrapper > div:hover {
+    box-shadow: 0 8px 16px 0 rgba(42, 41, 41, 0.2);
+}
+
+.banner-project-wrapper > div div {
+    padding: 2px 16px;
+    margin-bottom: 15px;
+}
+
+.banner-project-wrapper > div div p {
+    font-size: .9em;
+    font-weight: 500;
+    color: #b3b3b3;
+    margin-top: 10px;
+}
+
+.banner-project-wrapper > div > div a {
+    color: burlywood;
+}
+
+.project-cards {
+    display: flex;
+    align-items: center;
+}
+
+.banner-project-wrapper-1 > div {
+    margin-top: 50px;
+    margin-left: 5px;
+    background-color: #312f2f;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.banner-project-wrapper-1 > div img {
+    padding: 10px;
+}
+
+.banner-project-wrapper-1 > div:hover {
+    box-shadow: 0 8px 16px 0 rgba(42, 41, 41, 0.2);
+}
+
+.banner-project-wrapper-1 > div div {
+    padding: 2px 16px;
+    margin-bottom: 15px;
+}
+
+.banner-project-wrapper-1 > div div p {
+    font-size: .9em;
+    font-weight: 500;
+    color: #b3b3b3;
+    margin-top: 10px;
+}
+
+.banner-project-wrapper-1 > div > div a {
+    color: burlywood;
+}
+
+
+
+
+
+@media only screen and (max-width:740px){
+    .header-wrapper{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
+
+@media only screen and (max-width:850px){
+    .banner-wrapper{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+    }
+    
+}
+@media only screen and (max-width: 396px) {
+    .banner-wrapper > div > div {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: strech; /* Center buttons */
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .banner-project> div > div {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: strech; /* Center buttons */
+    }
+}
